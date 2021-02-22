@@ -1,6 +1,10 @@
 name: NanoPi R2S ImmortalWrt
 
 on:
+  schedule:
+    - cron: 0 4 * * *
+  watch:
+    types: started
   repository_dispatch:
   workflow_dispatch:
 
